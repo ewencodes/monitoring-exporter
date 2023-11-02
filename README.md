@@ -7,7 +7,7 @@ go build -o monitoring-exporter
 ```
 
 ```sh
-monitoring-exporter status --name <fqdn> --metric-name <name_of_the_metric>
+monitoring-exporter status --name <fqdn> --metric-prefix <prefix>
 ```
 
 ### Show help
@@ -18,5 +18,5 @@ monitoring-exporter status -h
 
 ## Using docker
 ```
-docker run -p 8081:8081 ewencodes/monitoring-exporter status --name <fqdn> --metric-name <name_of_the_metric>
+docker run -p 8081:8081 ewencodes/monitoring-exporter status --name <fqdn> --metric-prefix <prefix>
 ```
